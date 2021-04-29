@@ -1,3 +1,39 @@
+const dataset = d3.csv("./data/arp.csv")
+	.then(function(data) {
+		data.forEach(function(d) {
+
+        });
+
+        if (!keys.length) {
+            keys = data.columns;
+        };
+
+        // format data
+        let item = {};
+
+        for (var i = 0; i < cat1.list; i++) {
+            item.name = cat1[i];
+            
+            if (!item.children /* no children */) {
+                item.name = cat1[i];
+                item.value = 0;
+            }
+            else {
+                item.children = [];
+            }
+            
+            sunburstData.push(item);
+        }
+        
+
+    });
+
+// define keys & categories
+let keys = [];
+
+// dataset
+let sunburstData = [];
+
 // title case
 function titleCase(string) {
 	string = string.toLowerCase();
