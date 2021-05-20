@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="Ashley Louie, Yanchao Li, Prathito Wisambodhi">
+
+    <title>American Rescue Plan 2021</title>
+
+    <!-- <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://use.typekit.net/ncb0can.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Biryani&display=swap" rel="stylesheet">
+
+    <!-- <link rel=“stylesheet” href=“https://use.typekit.net/qof2ldy.css”> -->
+    <link rel = 'stylesheet' href = 'style.css'>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Spectral:wght@300&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+
+    <!-- link for vis -->
+    <link rel="prefetch" href="https://static.observableusercontent.com/worker/embedworker.51bdaede24caebcaf05ddc11bdcbd805d82c7146e0b018298bd9117f47d2cc72.js" crossorigin>
+    <link rel="prefetch" href="https://api.observablehq.com/@civicdatadesign/american-rescue-plan.js?v=3" crossorigin>
+    <!-- <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-sunburst.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-data-adapter.min.js"></script> -->
+
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Biryani&display=swap');
+</style>
+
+<body   >
+
+<!-- 7aabab -->
+  <section id = "sec01" >
+    <div class="wrapper" class="active">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="active">
+              <div class="sidebar-header">
+                  <h3>ARP Project</h3>
+
+              </div>
+
+            <ul class="list-unstyled components">
+                <!-- <p style = "font-size:20px ;font-family: 'Transat' sans-serif; color: #6b6141;">Money Distribution</p> -->
+                <li class="active">
+                      <li>
+                          <a  href="#">Home</a>
+                      </li>
+                      <li>
+                          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Categories</a>
+                          <ul class="collapse list-unstyled" id="homeSubmenu">
+                                    <li>
+                                        <a href=#sec03>TAX</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">UNEMPLOYMENT</a>
+                                    </li>
+
+                                    <br style="line-height:0px;"/>
+                                    <li>
+                                        <a href="#">STATE AND LOCAL ASSISTANCE </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">TRIBAL PROVISIONS </a>
+                                    </li>
+
+                                    <br style="line-height:0px;"/>
+                                    <li>
+                                        <a href="#">EDUCATION </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">HEALTHCARES </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">HOUSING </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CHILDCARE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">RESTAURANTS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">PAYCHECK PROTECTION PROGRAM</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">AGRICULTURE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ECONOMIC INJURY DISASTER LOAN</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">NUTRITION ASSISTANCE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DEFENSE PROTECTION ACT</a>
+                                    </li>
+
+                                    <br style="line-height:0px;"/>
+                                    <li>
+                                        <a href="#">AVIATION</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">PUBLIC TRANSPORTATION</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">BROADBAND</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">WATER AND UTILITY ASSISTANCE</a>
+                                    </li>
+
+
+
+                          </ul>
+                    </li>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Data Source</a>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+
+            <!-- <main > -->
+
+            <div class ="row">
+                <div class = "ver_line">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+
+                <div class = "ver_line2">
+                  <div class="vl"></div>
+                </div>
+
+
+                <div class = "col-11">
+                        <div class = "row_title">
+                            <div class="col-3">
+                              <h1 style = "font-size:25px ;color:#fff;" ><strong>How is the American</strong> </h1>
+                                <h1 style = "font-size:25px ;color:#fff;" ><strong>rescue plan distributed?</strong></h1>
+                            </div>
+                            <div class = 'col-8'></div>
+
+                        </div>
+
+                        <div>
+                              <div class = 'home_placeholder' style = "height: 60px;background-color: #203835"></div>
+
+                              <h1 style = "font-size:18px ;color:#fff; text-align:center;">The Biden administration passed the American Rescue Plan (ARP)</h1>
+
+                              <!-- <h1 style = "font-size:16px ; color:#fff; text-align:center;">ARP includes provisions on aid to state and local governments, hard-hit industries and communities,</h1>
+                              <h1 style = "font-size:16px ; color:#fff; text-align:center;margin-top: -5px"> tax changes affecting individuals and business, and other provisions. -->
+                              <h1 style = "font-size:18px ;color:#fff; text-align:center; "> on March 10,2021. It provides money of</h1>
+
+                              <h1 style = "font-size:90px ; color:#fff; text-align:center;"><strong>$ 1,900,000,000,000</strong></h1>
+
+                              <br /><br/>
+                              <h1 style = "font-size:18px ;color:#fff; text-align:center;"> That's a lot of zeros. </h1>
+                              <h1 style = "font-size:18px ;color:#fff; text-align:center;"> How is the money distributed? </h1>
+                              <br /><br/>
+                              <br /><br/>
+
+                              <div id="section04" class="demo">
+                                <a href="#sec02" style = "font-size:16px ;font-family: transat, sans-serif"><span></span>Scroll down</a>
+                              </div>
+
+                      </div>
+                </div>
+
+              </div>
+
+
+
+
+
+                <div class = "line"></div>
+
+
+            <h2 style = "font-size:28px ;color: #fff; margin-left: 300px;margin-right: 300px">American Rescue Plan Act of 2021</h2>
+            <p style = "font-size:20px ; color: #fff; margin-left: 300px;margin-right: 300px">The U.S. House of Representatives on March 10, 2021, passed the Senate-amended H.R. 1319, the American Rescue Plan (ARP). The ARP provides $1.9 trillion in additional relief to respond to the novel coronavirus (COVID-19). This follows the enactment of nearly $4 trillion in COVID relief in 2020. President Joe Biden called for Congress to enact the ARP to provide relief for individuals and business struggling due to COVID-19, as well as to achieve other priorities of the Biden Administration and Congress. ARP includes provisions on aid to state and local governments, hard-hit industries and communities, tax changes affecting individuals and business, and other provisions.</p>
+
+
+
+
+
+        </div>
+
+    </div>
+</section>
+
+<section id = "sec02">
+    <!-- <link rel="stylesheet" href="styleLevel0.css"> -->
+  <div class="wrapper02" class="active02">
+      <!-- Sidebar  -->
+
+        <nav id="sidebar02" class="active02">
+            <div class="sidebar-header02">
+                <!-- <h3>How is the American Rescue Plan Distributed?</h3> -->
+
+            </div>
+
+          <ul class="list-unstyled components">
+              <!-- <p style = "font-size:20px ;font-family: 'Transat' sans-serif; color: #6b6141;">Money Distribution</p> -->
+              <li class="active02">
+                    <li>
+                        <a  href=#sec01>Home</a>
+                    </li>
+                    <li>
+                        <a href="#homeSubmenu02" data-toggle="collapse02" aria-expanded="false" class="dropdown-toggle02">Categories</a>
+                        <ul class="collapse02 list-unstyled" id="homeSubmenu02">
+                            <li>
+                                <a href="#sec03">TAX</a>
+                            </li>
+                            <li>
+                                <a href="#">UNEMPLOYMENT</a>
+                            </li>
+
+                            <br style="line-height:0px;"/>
+                            <li>
+                                <a href="#">STATE AND LOCAL ASSISTANCE </a>
+                            </li>
+                            <li>
+                                <a href="#">TRIBAL PROVISIONS </a>
+                            </li>
+
+                            <br style="line-height:0px;"/>
+                            <li>
+                                <a href="#">EDUCATION </a>
+                            </li>
+                            <li>
+                                <a href="#">HEALTHCARES </a>
+                            </li>
+                            <li>
+                                <a href="#">HOUSING </a>
+                            </li>
+                            <li>
+                                <a href="#">CHILDCARE</a>
+                            </li>
+                            <li>
+                                <a href="#">RESTAURANTS</a>
+                            </li>
+                            <li>
+                                <a href="#">PAYCHECK PROTECTION PROGRAM</a>
+                            </li>
+                            <li>
+                                <a href="#">AGRICULTURE</a>
+                            </li>
+                            <li>
+                                <a href="#">ECONOMIC INJURY DISASTER LOAN</a>
+                            </li>
+                            <li>
+                                <a href="#">NUTRITION ASSISTANCE</a>
+                            </li>
+                            <li>
+                                <a href="#">DEFENSE PROTECTION ACT</a>
+                            </li>
+
+                            <br style="line-height:0px;"/>
+                            <li>
+                                <a href="#">AVIATION</a>
+                            </li>
+                            <li>
+                                <a href="#">PUBLIC TRANSPORTATION</a>
+                            </li>
+                            <li>
+                                <a href="#">BROADBAND</a>
+                            </li>
+                            <li>
+                                <a href="#">WATER AND UTILITY ASSISTANCE</a>
+                            </li>
+
+                        </ul>
+                  </li>
+              </li>
+              <li>
+                  <a href="#">Contact</a>
+              </li>
+              <li>
+                  <a href="#">Data Source</a>
+              </li>
+          </ul>
+
+        </nav>
+
+      <!-- Page Content  -->
+      <div id="content">
+
+          <!-- <main > -->
+
+          <div class ="row">
+              <div class = "ver_line">
+
+                <button type="button" id="sidebarCollapse02" class="navbar-btn" >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                  <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse02" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fas fa-align-justify"></i>
+                  </button>
+
+              </div>
+
+              <div class = "ver_line2">
+                <div class="vl"></div>
+              </div>
+
+
+
+              <div class = "row_title02">
+                    <h1 style = "font-size:25px ;color:#203835; margin-left: 20px"><strong>How is the American</strong> </h1>
+                    <h1 style = "font-size:25px ;color:#203835;margin-left: 20px" ><strong>rescue plan distributed?</strong></h1>
+
+              </div>
+
+
+              <div class = 'col-7'>
+                <!-- visulization  -->
+                <!-- <h2 style = "font-size:25px ;color: #203835;  ">Money distribution for ARP</h2> -->
+                <br></br>
+                <br></br>
+                <br></br>
+                <!-- <iframe width="100%" height="720" frameborder="0"
+                  src="https://observablehq.com/embed/@civicdatadesign/american-rescue-plan?cells=chart"></iframe> -->
+                      <div class = 'Vis000'>
+                              <!-- <div id="container6"></div> -->
+                            <!-- <iframe class="content" src="https://civicdatadesign.static.observableusercontent.com/worker/embedworker.89cccdff5ba7953e9cf32a8a033b1cc8c9fa90c20ca3c1e670843c26e93e6797.html?cells=chart"
+                              sandbox="allow-same-origin allow-scripts allow-downloads allow-popups allow-forms allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+                              allow="geolocation; microphone; camera; midi; encrypted-media; autoplay; accelerometer; magnetometer; gyroscope; vr"></iframe> -->
+
+                      </div>
+              </div>
+
+              <div class = 'col-2'>
+                <h2 style = "font-size:16px ;color: #203835; margin-top: 200px "><strong>American Rescue Plan</strong></h2>
+                <h2 style = "font-size:25px ;color: #203835;  "><strong>$1.9 trillion</strong></h2>
+              <!-- <h1>asdlgja kgeir jgaleg jeij glmsf ggjelgn alj giegn ewig awgv mpao gja weilg ae galighw <h1> -->
+              </div>
+
+
+        </div>
+
+
+      </div>
+
+  </div>
+</section>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./js/d3.v6.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse02').on('click', function () {
+                $('#sidebar02').toggleClass('active');
+                // $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+    <!-- <script>
+        anychart.onDocumentReady(function () {
+         anychart.data.loadJsonFile('https://gist.githubusercontent.com/shacheeswadia/3bbe6eb041166e259f1712e6766fa5a2/raw/341d2796dd63e6e6defc1ec52dd4e73c7828c38c/sunburstDataUpdated.json',
+        //anychart.data.loadJsonFile('https://gist.github.com/yanchaomcp/dbb5ed2ea904915cf93ae65e6f437749',
+          function (data) {
+            // create a data tree from the dataset
+            var dataTree = anychart.data.tree(data);
+
+            // create a sunburst chart
+            var chart = anychart.sunburst(dataTree);
+            // set the calculation mode
+            chart.calculationMode('parent-independent');
+            // set the ascending sort order
+            chart.sort('asc');
+            // set the chart title
+            chart.title("American Rescue Plan 2021");
+
+            // enable HTML in labels
+            chart.labels().useHtml(true);
+            // customize the format of the sunburst chart labels
+
+            chart
+              .level(2)
+              .labels()
+              .fontFamily("transat,sans-serif")
+              .format("<span style='font-size:12px'>{%name}</span>");
+            chart
+              .level(1)
+              .labels()
+              .fontFamily("transat,sans-serif")
+              .format("<span style='font-size:16px'>{%name}</span>");
+            chart
+              .level(0)
+              .labels()
+              .fontFamily("transat,sans-serif")
+              .fontWeight(500)
+              .format("<span style='font-size:16px'>TOTAL Money</span><br><br><span style='font-size:16px'>{%value}{groupsSeparator:\\,}</span>");
+            // enable HTML in tooltips
+            chart.tooltip().useHtml(true);
+            // customize the format of the sunburst chart tooltip
+            chart
+              .tooltip()
+              .fontFamily("transat,sans-serif")
+              .format("<h5 style='font-size:14px; margin: 0.25rem 0;'>{%name}</h5><h6 style='font-size:14px; font-weight:400; margin: 0.2rem 0;'>Total Cases: <b>{%value}{groupsSeparator:\\,}</b></h6><h6 style='font-size:14px; font-weight:400; margin: 0.2rem 0;'>Total Deaths: <b>{%total_deaths}{groupsSeparator:\\,}</b></h6>");
+
+            // configure the chart stroke
+            chart.normal().stroke("#fff", 0.2);
+            // set the point fill
+            chart.fill(function (d) {
+              return anychart.color.darken(this.parentColor, 0.15);
+            });
+
+            // set the chart container element id
+            chart.container('container');
+            // initiate chart drawing
+            chart.draw();
+
+          });
+        });
+    </script> -->
+
+
+
+</body>
+<div id = 'footer'>
+
+  <hr>
+  <p  style = "color:#fff; text-align:center"; >Courtesy of MIT Civic Data Design Lab 2021 with the assistance of H&K Associates</p>
+</div>
+
+</html>
