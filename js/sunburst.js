@@ -1,6 +1,3 @@
-// define keys & categories
-let keys = [];
-
 // dataset
 let sunburstData = [];
 
@@ -20,6 +17,7 @@ const color = d3.scaleOrdinal()
     .range(["#404d6c", "#697db0", "#e08162", "#f69270", "#4a9ba8", "#63b7c8","#7ac7d6","#94752d","#af8b34","#cfa43d","#e1b241","#f0c96c","#4f6e4a","#689161","#85bb7d"]);
 
 var format = format = d3.format(",d");
+
 var arc = d3.arc()
     .startAngle(d => d.x0)
     .endAngle(d => d.x1)
@@ -27,6 +25,7 @@ var arc = d3.arc()
     .padRadius(radius * 1.5)
     .innerRadius(d => d.y0 * radius)
     .outerRadius(d => Math.max(d.y0 * radius, d.y1 * radius - 1))
+    
 var partition = data => {
         const root = d3.hierarchy(data)
             .sum(d => d.allocation)
